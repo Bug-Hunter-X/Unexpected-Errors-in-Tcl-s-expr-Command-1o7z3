@@ -1,0 +1,1 @@
+proc goodproc {a b} {if {[string is double -strict $a] && [string is double -strict $b]} {return [expr {$a + $b}]} else {return "Error: Arguments must be numbers"}} puts [goodproc 10 20] puts [goodproc a 20]
